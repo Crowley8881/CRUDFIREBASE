@@ -12,13 +12,14 @@ import {
 } from "https://www.gstatic.com/firebasejs/10.1.0/firebase-firestore.js";
 
 // Configuração do Firebase
+// Replace the hardcoded `firebaseConfig` with environment variables
 const firebaseConfig = {
-  apiKey: "AIzaSyCXisc0WlsrTmZyaazau4_USCYO70SZROY",
-  authDomain: "introfirebase-c5c6b.firebaseapp.com",
-  projectId: "introfirebase-c5c6b",
-  storageBucket: "introfirebase-c5c6b.appspot.com",
-  messagingSenderId: "622056478024",
-  appId: "1:622056478024:web:3aaf0e963f647bee310f7d"
+  apiKey: process.env.FIREBASE_API_KEY,
+  authDomain: process.env.FIREBASE_AUTH_DOMAIN,
+  projectId: process.env.FIREBASE_PROJECT_ID,
+  storageBucket: process.env.FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: process.env.FIREBASE_MESSAGING_SENDER_ID,
+  appId: process.env.FIREBASE_APP_ID
 };
 
 const app = initializeApp(firebaseConfig);
