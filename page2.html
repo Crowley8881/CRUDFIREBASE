@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cadastro Completo - Firebase CRUD</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Cadastro de Usuário</h1>
+    <div class="navigation">
+      <a href="index.html">Página 1</a>
+      <a href="page2.html" class="active">Página 2</a>
+    </div>
+
+    <div class="form">
+      <div class="form-row">
+        <div class="form-group">
+          <label for="fullName">Nome Completo:</label>
+          <input type="text" id="fullName" placeholder="Nome Completo" />
+        </div>
+        <div class="form-group">
+          <label for="birthDate">Data de Nascimento:</label>
+          <input type="date" id="birthDate" />
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label for="rg">RG:</label>
+          <input type="text" id="rg" placeholder="00.000.000-0" />
+        </div>
+        <div class="form-group">
+          <label for="cpf">CPF:</label>
+          <input type="text" id="cpf" placeholder="000.000.000-00" />
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label for="father">Pai:</label>
+          <input type="text" id="father" placeholder="Nome do Pai" />
+        </div>
+        <div class="form-group">
+          <label for="mother">Mãe:</label>
+          <input type="text" id="mother" placeholder="Nome da Mãe" />
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label for="education">Escolaridade:</label>
+          <select id="education">
+            <option value="">Selecione</option>
+            <option value="fundamental">Ensino Fundamental</option>
+            <option value="medio">Ensino Médio</option>
+            <option value="superior">Ensino Superior</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="profession">Profissão:</label>
+          <input type="text" id="profession" placeholder="Profissão" />
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label for="phone">Telefone:</label>
+          <input type="text" id="phone" placeholder="0000-0000" />
+        </div>
+        <div class="form-group">
+          <label for="cell">Celular:</label>
+          <input type="text" id="cell" placeholder="(00) 00000-0000" />
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" placeholder="exemplo@email.com" />
+      </div>
+
+      <div class="buttons">
+        <button id="addUser">Cadastrar</button>
+        <button id="updateUser" class="update_data">Atualizar</button>
+      </div>
+
+      <div id="notify" class="notify"></div>
+    </div>
+
+    <div class="table">
+      <h2>Usuários Cadastrados</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Nome</th>
+            <th>Data Nasc.</th>
+            <th>RG</th>
+            <th>CPF</th>
+            <th>Pai</th>
+            <th>Mãe</th>
+            <th>Escolaridade</th>
+            <th>Profissão</th>
+            <th>Telefone</th>
+            <th>Celular</th>
+            <th>E-mail</th>
+            <th>Ações</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Dados serão inseridos aqui -->
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <script type="module" src="products.js"></script>
+</body>
+</html>

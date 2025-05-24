@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Firebase CRUD - Página 1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Firebase CRUD - Tutorial</h1>
+        <div class="navigation">
+            <a href="index.html" class="active">Página 1</a>
+            <a href="page2.html">Página 2</a>
+        </div>
+        
+        <div class="form">
+            <h2>Cadastro de Usuários</h2>
+            <div class="form-group">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" placeholder="Digite o nome">
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="Digite o email">
+            </div>
+            <div class="buttons">
+                <button id="add_Data">Cadastrar</button>
+                <button id="update_data" class="update_data">Atualizar</button>
+            </div>
+            <div id="notify" class="notify"></div>
+        </div>
+        
+        <div class="table">
+            <h2>Usuários Cadastrados</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nome</th>
+                        <th>Email</th>
+                        <th>Excluir</th>
+                        <th>Atualizar</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Dados serão inseridos aqui pelo JavaScript -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Scripts do Firebase -->
+    <script type="module" src="app.js"></script>
+</body>
+</html>
